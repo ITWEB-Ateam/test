@@ -1,0 +1,40 @@
+.content{
+  width: 430px;
+  height: 932px;
+  border: 2px skyblue solid;
+  .question{
+    width: 100%;
+    margin: 0 auto;
+    height: 30%;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .sentence{
+      width: 100%;
+      height: 20%;
+      word-break: break-all;
+    }
+  }
+  .choices{
+    width: 100%;
+    height: 40%;
+    background: #777;
+    .answer{
+      width: 100%;
+      height: 100%;
+      display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    a{
+      width: 50%;
+      height: 50%;
+      // line-height: 100%;
+      border: #333 1px solid;
+    }
+    }
+  }
+}
+
