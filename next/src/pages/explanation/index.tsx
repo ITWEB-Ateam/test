@@ -20,12 +20,10 @@ export default function explanation(){
     setIsAnswerContentMoved(true);
     setClickedAnswer(answerIndex);
   };
-
-
-
-
   const answerContentClass = `${style.answerContent} ${isAnswerContentMoved ? style.moveUp : ''}`;
 
+
+  
   return(
     <>
       <div>
@@ -35,7 +33,7 @@ export default function explanation(){
             <h3>友人</h3>
             <div className={style.backArrow}>
               <figure>
-                <img src="/images/backArrow.png" alt="" />
+                <a href="/themePage"><img src="/images/backArrow.png" alt="" /></a>
               </figure>
             </div>
           </header>
@@ -59,7 +57,7 @@ export default function explanation(){
               <div className={`${style.answer} ${style.circle}`}>
                 <a href="#">1.<span>休み時間</span></a>
               </div>
-              <div className={`${style.answer} ${clickedAnswer === 1 ? style.changeColor : ''}`}>
+              <div className={`${style.answer} ${style.clickColor} ${clickedAnswer === 1 ? style.changeColor : ''}`}>
                 <a href="#" onClick={() => handleClick(1)}>
                   1.<span>休み時間</span>
                 </a>
@@ -76,7 +74,7 @@ export default function explanation(){
                 <h2>2. 不正解</h2>
                 <p>解説</p>
                 <h4>休み時間休み時間休み時間休み時間休み時間休み時間休み時間休み時間休み時間</h4>
-                <a href="#">次に進む</a>
+                <a href="/question">次に進む</a>
               </div>
             </div>
           </main>

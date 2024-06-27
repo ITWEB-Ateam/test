@@ -148,6 +148,16 @@ $explanationColor:#FD473B;
           }
         }
       }
+      .clickColor{
+        background:#6ACFCF;
+        a{
+          box-shadow: 0 5px 0 darken(#6ACFCF, 20%);
+          color:#f9ffff;
+          span{
+            color: #f9ffff;
+          }
+        }
+      }
       .changeColor{
         background-color: #FFDCDB;
         a{
@@ -175,7 +185,7 @@ $explanationColor:#FD473B;
       border-radius:20px 20px 0 0 ;
       opacity: 0;
       transform: translateY(0);
-      transition: opacity 0.5s ease, transform 0.5s ease;
+      transition: opacity 0.48s ease, transform 0.5s ease;
       .explanation{
         width: 90%;
         margin: 0 auto;
@@ -211,7 +221,7 @@ $explanationColor:#FD473B;
     }
     .show{
       opacity: 1;
-      transform: translateY(-100%);
+      transform: translateY(-240px);
     }
   }
 }

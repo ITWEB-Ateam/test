@@ -37,7 +37,7 @@ export default function question(){
             <h3>友人</h3>
             <div className={style.backArrow}>
               <figure>
-                <img src="/images/backArrow.png" alt="" />
+                <a href="/themePage"><img src="/images/backArrow.png" alt="" /></a>
               </figure>
             </div>
           </header>
